@@ -23,6 +23,19 @@ class Person {
 
 function main() {
 
+    var john = new Person("John Jacob Jingleheimer Schmidt",99,434,130);
+    var rump = new Person("Rumpelstiltskin",920187419741,55,80);
+
+    john.bodyMassIndex();
+    rump.bodyMassIndex();
+
+    alert(john.name+" BMI is "+ john.bodyMassIndex());
+    alert(rump.name+" BMI is "+ rump.bodyMassIndex());
+
+    var personArray=[john,rump];
+    personArray[0].printPerson();
+    personArray[1].printPerson();
+
 }
 
 main();

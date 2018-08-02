@@ -1,4 +1,5 @@
-class Account{
+class Account
+{
 
     constructor(accountName, accountBalance)
     {
@@ -22,6 +23,16 @@ class Account{
     }
 }
 
-function main() {
+function main()
+{
+    var accName = new Account("John Jacob Jingleheimer Schmidt", 100);
+    accName.deposit(20);
+
+    alert(accName.accountBalance);
+
+
+
 
 }
+
+main();
